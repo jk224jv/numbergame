@@ -2,6 +2,7 @@
   "name": "pipelineslots",
   "version": "0.1.0",
   "private": true,
+  "author": "Jimmy Karlsson <jk224jv@studen.lnu.se>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

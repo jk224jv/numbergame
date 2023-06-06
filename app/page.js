@@ -150,61 +150,63 @@ export default function PipelineSlots() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-y-10 p-24">
+    <main className="flex min-h-screen flex-col items-center justify-start lg:justify-center gap-y-10 p-24">
       <div className="flex flex-row items-center justify-center">
-        <div id="pass" className='flex flex-col h-20 w-44 animate-pulse duration-1000'><FontAwesomeIcon icon={faCheck} className="flex-shrink border-box text-green-500 border-8 object-contain h-16 w-16 mx-auto border-solid border-green-500 rounded-full" /></div>
-        <h1 className="text-4xl font-bold text-center" >Pipeline slots</h1>
-        <div id="fail" className='flex flex-col  h-20 w-44 flex-shrink animate-pulse'><FontAwesomeIcon icon={faCircleXmark} className='text-red-500 h-full w-full mx-auto'/></div>
+        <div id="pass" className='flex flex-col h-20 w-20 md:w-32 lg:w-44 animate-pulse duration-1000'><FontAwesomeIcon icon={faCheck} className="border-box text-green-500 border-8 object-contain h-16 w-16 mx-auto border-solid border-green-500 rounded-full" /></div>
+        <h1 className="sm:text-2xl lg:text-4xl font-bold text-center" >Pipeline slots</h1>
+        <div id="fail" className='flex flex-col h-20 w-20 md:w-32 lg:w-44  animate-pulse'><FontAwesomeIcon icon={faCircleXmark} className='text-red-500 h-full w-full mx-auto'/></div>
       </div>
       <div className="flex flex-row items-center justify-center">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="text-2xl font-bold text-center">Build</h2>
-          <div className="flex flex-col slot-container items-center justify-center w-44 h-80 bg-amber-300 border-4 border-slate-400 border-solid mr-5 p-3" id="slot1">
+          <h2 className="text-sm sm:text-2xl font-bold text-center">Build</h2>
+          <div className="flex flex-col slot-container items-center justify-center w-16 sm:w-20 md:w-32 lg:w-44 h-80 bg-amber-300 border-4 border-slate-400 border-solid sm:mr-1 p-1 sm:p-3" id="slot1">
             <div className='relative overflow-hidden flex flex-col items-center justify-center h-full w-full bg-slate-50 border-slate-400 border-solid border-2 shadow' id="slot1-1">
             </div>
           </div>
-          <div id="slot1-result" className='flex flex-col h-20 w-44 mt-5'>&nbsp;</div>
+          <div id="slot1-result" className='flex flex-col h-18 sm:h-20 w-18 sm:w-20 md:w-32 lg:w-44 mt-5'>&nbsp;</div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <h2 className="text-2xl font-bold text-center">Lint</h2>
-          <div className="flex flex-col slot-container items-center justify-center w-44 h-80 bg-amber-300 border-4 border-slate-400 border-solid mr-5 p-3" id="slot2">
+          <h2 className="text-sm sm:text-2xl font-bold text-center">Lint</h2>
+          <div className="flex flex-col slot-container items-center justify-center w-16 sm:w-20 md:w-32 lg:w-44 h-80 bg-amber-300 border-4 border-slate-400 border-solid sm:mr-1 p-1 sm:p-3" id="slot2">
             <div className='relative overflow-hidden flex flex-col items-center justify-center h-full w-full bg-slate-50 border-slate-400 border-solid border-2 shadow' id="slot2-1">
             </div>
           </div>
-          <div id="slot2-result" className='flex flex-col h-20 w-44 mt-5'>&nbsp;</div>
+          <div id="slot2-result" className='flex flex-col h-18 sm:h-20 w-18 sm:w-20 md:w-32 lg:w-44 mt-5'>&nbsp;</div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <h2 className="text-2xl font-bold text-center">Test</h2>
-          <div className="flex flex-col slot-container items-center justify-center w-44 h-80 bg-amber-300 border-4 border-slate-400 border-solid mr-5 p-3" id="slot3">
+          <h2 className="text-sm sm:text-2xl font-bold text-center">Test</h2>
+          <div className="flex flex-col slot-container items-center justify-center w-16 sm:w-20 md:w-32 lg:w-44 h-80 bg-amber-300 border-4 border-slate-400 border-solid sm:mr-1 p-1 sm:p-3" id="slot3">
             <div className='relative overflow-hidden flex flex-col items-center justify-center h-full w-full bg-slate-50 border-slate-400 border-solid border-2 shadow' id="slot3-1">
             </div>
           </div>
-          <div id="slot3-result" className='flex flex-col h-20 w-44 mt-5'>&nbsp;</div>
+          <div id="slot3-result" className='flex flex-col h-18 sm:h-20 w-18 sm:w-20 md:w-32 lg:w-44 mt-5'>&nbsp;</div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <h2 className="text-2xl font-bold text-center">Container</h2>
-          <div className="flex flex-col slot-container items-center justify-center w-44 h-80 bg-amber-300 border-4 border-slate-400 border-solid mr-5 p-3" id="slot4">
+          <h2 className="text-sm sm:text-2xl font-bold text-center">Docker</h2>
+          <div className="flex flex-col slot-container items-center justify-center w-16 sm:w-20 md:w-32 lg:w-44 h-80 bg-amber-300 border-4 border-slate-400 border-solid sm:mr-1 p-1 sm:p-3" id="slot4">
             <div className='relative overflow-hidden flex flex-col items-center justify-center h-full w-full bg-slate-50 border-slate-400 border-solid border-2 shadow' id="slot4-1">
             </div>
           </div>
-          <div id="slot4-result" className='flex flex-col h-20 w-44 mt-5'>&nbsp;</div>
+          <div id="slot4-result" className='flex flex-col h-18 sm:h-20 w-18 sm:w-20 md:w-32 lg:w-44 mt-5'>&nbsp;</div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <h2 className="text-2xl font-bold text-center">Deploy</h2>
-          <div className="flex flex-col slot-container items-center justify-center  w-44 h-80 bg-amber-300 border-4 border-slate-400 border-solid mr-5 p-3" id="slot5">
+          <h2 className="text-sm sm:text-2xl font-bold text-center">Deploy</h2>
+          <div className="flex flex-col slot-container items-center justify-center w-16 sm:w-20 md:w-32 lg:w-44 h-80 bg-amber-300 border-4 border-slate-400 border-solid sm:mr-1 p-1 sm:p-3" id="slot5">
             <div className='relative flex flex-col overflow-hidden items-center justify-center h-full w-full bg-slate-50 border-slate-400 border-solid border-2 shadow' id="slot5-1">
             </div>
           </div>
-          <div id="slot5-result" className='flex flex-col h-20 w-44 mt-5'>&nbsp;</div>
+          <div id="slot5-result" className='flex flex-col h-18 sm:h-20 w-18 sm:w-20 md:w-32 lg:w-44 mt-5'>&nbsp;</div>
         </div>
         {/* end of slots  */}
       </div>
       <div className="flex flex-row items-center justify-center">
-        <div className="flex flex-row gap-10 items-center justify-center">
+        <div className="flex flex-row gap-5 sm:gap-10 items-center justify-center">
           <button className="bg-red-500 text-white font-bold py-8 px-16 rounded" id="stop" onClick={stopSlots}>Stop</button>
           <button className="bg-blue-500 text-white font-bold py-8 px-16 rounded" id="spin" onClick={populateSlots}>Spin</button>
         </div>
       </div>
+      <p className=''>This is a small project by Jimmy Karlsson, Codesmith junior-grade, in training at Linnaeus University.</p>
+      <p className=''>The source code is available on <a href="https://github.com/jk224jv/pipelineslots"><span className='text-sky-500 font-semi-bold italic underline cursor-pointer'>https://github.com/jk224jv/pipelineslots</span></a></p>
     </main>
   )
 }
