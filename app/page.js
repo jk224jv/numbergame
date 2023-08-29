@@ -206,7 +206,7 @@ export default function PipelineSlots() {
         </div>
       </div>
       <p className=''>This is a small project by Jimmy Karlsson, Codesmith junior-grade, in training at Linnaeus University.</p>
-      <p className=''>The source code is available on <a href="https://github.com/jk224jv/pipelineslots"><span className='text-sky-500 font-semi-bold italic underline cursor-pointer'>https://github.com/jk224jv/pipelineslots</span></a></p>
+      <p className=''>The source code is available on <a href="https://github.com/kodsmed/pipelineslots"><span className='text-sky-500 font-semi-bold italic underline cursor-pointer'>https://github.com/kodsmed/pipelineslots</span></a></p>
     </main>
   )
 }
